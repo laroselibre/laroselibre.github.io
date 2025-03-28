@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Rose Libre - Services d'aide à domicile à Grenoble</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #f8e1f4;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #d67ab1;
+        }
+        .logo {
+            max-width: 150px;
+            margin: 0 auto 10px;
+            display: block;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #d67ab1;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 15px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        section {
+            padding: 30px 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .service-card h3 {
+            color: #d67ab1;
+            border-bottom: 2px solid #d67ab1;
+            padding-bottom: 10px;
+        }
+        .service-card ul {
+            padding-left: 20px;
+        }
+        .service-card li {
+            margin-bottom: 8px;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #d67ab1;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background: #c569a0;
+        }
+        .tagline {
+            font-style: italic;
+            color: #d67ab1;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .about-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f8e1f4;
+            padding: 25px;
+            border-radius: 8px;
+            line-height: 1.8;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                margin: 5px 10px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="libre.webp" alt="Logo La Rose Libre" class="logo">
+        <h1>La Rose Libre</h1>
+        <p class="tagline">Votre service de liberté et de bien-être à domicile</p>
+    </header>
+    <nav>
+        <a href="#services">Nos Services</a>
+        <a href="#apropos">À propos</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#avantages">Avantages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+        <h2 style="text-align: center; margin-bottom: 30px;">Nos Services Complets</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Aide-ménagère</h3>
+                <ul>
+                    <li>Entretien complet de la maison</li>
+                    <li>Lavage et rangement du linge</li>
+                    <li>Repassage</li>
+                    <li>Nettoyage des pièces de vie</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Aide au quotidien</h3>
+                <ul>
+                    <li>Préparation de repas équilibrés</li>
+                    <li>Courses alimentaires</li>
+                    <li>Accompagnement dans les déplacements</li>
+                    <li>Aide à la prise des repas</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Soutien moral et social</h3>
+                <ul>
+                    <li>Compagnie et conversation</li>
+                    <li>Accompagnement pour les sorties</li>
+                    <li>Stimulation cognitive</li>
+                    <li>Activités ludiques et loisirs</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Assistance administrative</h3>
+                <ul>
+                    <li>Aide à la gestion du courrier</li>
+                    <li>Remplissage de formulaires</li>
+                    <li>Organisation des documents</li>
+                    <li>Accompagnement dans les démarches</li>
+                </ul>
+            </div>
+            <div class="service-card">
+                <h3>Services spécialisés</h3>
+                <ul>
+                    <li>Aide à la toilette</li>
+                    <li>Soutien à la mobilité</li>
+                    <li>Soins non médicalisés</li>
+                    <li>Surveillance de la prise de médicaments</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos">
+        <h2 style="text-align: center;">À propos de La Rose Libre</h2>
+        <div class="about-container">
+            <p><strong>Gérante :</strong> Mme T. Sylvie</p>
+            <p><strong>Secteur d'activité :</strong> Services d'aide à domicile (code APE 8810A)</p>
+            <p><strong>Zone d'intervention :</strong> Agglomération grenobloise et ses environs</p>
+            <p><strong>Philosophie :</strong> Offrir un accompagnement personnalisé qui préserve l'autonomie et le bien-être de chaque client.</p>
+            <p><strong>Engagement :</strong> Professionnalisme, discrétion et adaptabilité à vos besoins spécifiques.</p>
+        </div>
+    </section>
+
+    <section id="tarifs">
+        <h2 style="text-align: center;">Nos Tarifs</h2>
+        <div style="max-width: 600px; margin: 0 auto; background: #f8e1f4; padding: 20px; border-radius: 8px;">
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #d67ab1;">
+                    <strong>Aide à domicile standard</strong> : 25,50 €/heure
+                </li>
+                <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #d67ab1;">
+                    <strong>Services spécialisés</strong> : 28,00 €/heure
+                </li>
+                <li style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #d67ab1;">
+                    <strong>Dimanches/Jours fériés</strong> : +25% (31,88 €/heure)
+                </li>
+                <li>
+                    <strong>Forfaits</strong> : Sur devis (contactez-nous)
+                </li>
+            </ul>
+            <p style="text-align: center; font-style: italic; margin-top: 20px;">
+                Tarifs conformes aux recommandations du Conseil Départemental de l'Isère (2025)
+            </p>
+        </div>
+    </section>
+
+    <section id="avantages">
+        <h2 style="text-align: center;">Avantages pour Vous</h2>
+        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <div style="flex: 1; min-width: 300px; background: #eef7ff; padding: 20px; border-radius: 8px;">
+                <h3 style="color: #d67ab1;">Avantages Fiscaux</h3>
+                <p>Bénéficiez d'une <strong>réduction d'impôt de 50%</strong> sur les sommes versées (dans la limite de 15 000 €/an).</p>
+                <p><em>Exemple : Pour 1 000 € de services, votre coût réel n'est que de 500 € après réduction.</em></p>
+            </div>
+            <div style="flex: 1; min-width: 300px; background: #eef7ff; padding: 20px; border-radius: 8px;">
+                <h3 style="color: #d67ab1;">Paiement Simplifié</h3>
+                <p>Nous acceptons le <strong>Chèque Emploi Service Universel (CESU)</strong> :</p>
+                <ul>
+                    <li>Déclaration automatique</li>
+                    <li>Pas de paperasserie</li>
+                    <li>Paiement sécurisé</li>
+                </ul>
+                <p><a href="https://www.cesu.urssaf.fr" target="_blank" style="color: #d67ab1;">› En savoir plus sur le CESU</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 style="text-align: center;">Contactez-nous</h2>
+        <div class="contact-form">
+            <form action="mailto:info.laroselibre@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Votre nom" required>
+                <input type="email" name="email" placeholder="Votre email" required>
+                <input type="tel" name="phone" placeholder="Téléphone">
+                <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                <button type="submit">Envoyer la demande</button>
+            </form>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <p><strong>Adresse :</strong> 38100 Grenoble</p>
+            <p><strong>Téléphone :</strong> 09 83 80 84 43</p>
+            <p><strong>Email :</strong> info.laroselibre@gmail.com</p>
+            <p><strong>SIREN :</strong> 941 848 269</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 La Rose Libre - Services d'aide à domicile à Grenoble</p>
+        <p>Auto-entreprise immatriculée au RNE (SIREN 941 848 269)</p>
+    </footer>
+</body>
+</html>
