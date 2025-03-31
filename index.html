@@ -141,6 +141,36 @@
                 font-size: 0.9em;
             }
         }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            line-height: 1.8;
+        }
+        
+        .contact-info a {
+            color: #d67ab1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            color: #c569a0;
+            text-decoration: underline;
+        }
+        
+        /* Optimisation mobile */
+        @media (max-width: 600px) {
+            .contact-info p {
+                margin: 10px 0;
+            }
+            
+            a[href^="tel:"], 
+            a[href^="mailto:"] {
+                display: inline-block;
+                padding: 5px 0;
+                word-break: break-all;
+            }
+        }
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
