@@ -14,33 +14,43 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+
+        /* En-tête */
         header {
             background-color: #f8e1f4;
-            padding: 20px;
+            padding: 5px 0; /* Marge verticale très réduite */
             border-bottom: 3px solid #d67ab1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
         }
-        .logo-container {
+
+        .logo-title-container {
             display: flex;
             align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0 20px; /* Pas de padding vertical */
         }
+
         .logo {
-            max-width: 150px;
-            height: auto;
+            height: 60px;
+            width: auto;
         }
-        .header-center {
+
+        .header-text {
             text-align: center;
-            flex-grow: 1;
-            padding: 0 20px;
         }
+
+        .header-title {
+            font-size: 1.8em;
+            color: #333;
+            margin: 0;
+            line-height: 1.2;
+        }
+
         .tagline {
             font-style: italic;
             color: #d67ab1;
-            font-size: 1.2em;
-            margin-top: 5px;
+            font-size: 1em;
+            margin-top: 2px;
         }
         nav {
             display: flex;
