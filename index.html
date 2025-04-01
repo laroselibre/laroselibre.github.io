@@ -30,8 +30,7 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-
-            :root {
+        :root {
             --primary-color: #d67ab1;
             --secondary-color: #f8e1f4;
             --text-color: #333;
@@ -47,20 +46,40 @@
             padding: 0 20px;
         }
         
-        /* En-tête stylisé */
+        /* En-tête stylisé avec logos */
         header {
             background-color: var(--secondary-color);
             padding: 20px 0;
             border-bottom: 3px solid var(--primary-color);
-            text-align: center;
             position: relative;
             margin-bottom: 30px;
         }
         
-        .header-content {
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             max-width: 1000px;
             margin: 0 auto;
             padding: 0 20px;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            max-height: 100px;
+            width: auto;
+            transition: transform 0.3s;
+        }
+        
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        
+        .header-center {
+            text-align: center;
+            flex: 1;
+            padding: 0 30px;
+            min-width: 300px;
         }
         
         .service-title {
@@ -73,7 +92,7 @@
         
         .main-title {
             color: var(--primary-color);
-            font-size: 2.4em;
+            font-size: 2.2em;
             font-weight: 700;
             margin: 0 0 10px 0;
             position: relative;
@@ -141,6 +160,7 @@
             margin-top: 25px;
             border-radius: 5px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            width: 100%;
         }
         
         nav ul {
@@ -168,15 +188,44 @@
         }
         
         /* Responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 900px) {
+            .header-container {
+                flex-direction: column;
+            }
+            
+            .logo {
+                max-height: 80px;
+                margin-bottom: 15px;
+            }
+            
+            .header-center {
+                order: -1;
+                padding: 0;
+                margin-bottom: 20px;
+            }
+            
             .main-title {
                 font-size: 2em;
             }
             
             .header-contacts {
                 gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                max-height: 60px;
+            }
+            
+            .main-title {
+                font-size: 1.8em;
+            }
+            
+            .header-contacts {
                 flex-direction: column;
                 align-items: center;
+                gap: 10px;
             }
             
             nav ul {
@@ -187,7 +236,7 @@
                 font-size: 1em;
             }
         }
-
+        
         section {
             padding: 30px 0;
         }
@@ -254,40 +303,6 @@
             border-radius: 8px;
             line-height: 1.8;
         }
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            .logo-container {
-                justify-content: center;
-                margin-bottom: 15px;
-            }
-            .header-center {
-                padding: 0;
-                margin: 15px 0;
-            }
-            nav a {
-                margin: 5px 10px;
-                font-size: 0.9em;
-            }
-        }
-        .contact-info {
-            text-align: center;
-            margin-top: 30px;
-            line-height: 1.8;
-        }
-        
-        .contact-info a {
-            color: #d67ab1;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .contact-info a:hover {
-            color: #c569a0;
-            text-decoration: underline;
-        }
         
         /* Optimisation mobile */
         @media (max-width: 600px) {
@@ -302,27 +317,7 @@
                 word-break: break-all;
             }
         }
-
-        @media (max-width: 900px) {
-            .header-contacts {
-                font-size: 0.8em;
-                gap: 10px;
-            }
-        }
-        @media (max-width: 768px) {
-            .header-contacts {
-                flex-wrap: wrap;
-                white-space: normal;
-                justify-content: center;
-                gap: 8px 15px;
-            }
-        }
-        @media (max-width: 480px) {
-            .header-contacts {
-                font-size: 0.75em;
-                gap: 5px 10px;
-            }
-        }
+        
     </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
